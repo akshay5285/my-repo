@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> html css js linking</title>
+    <meta http-equiv="refresh" content="30">
+    <style>
+        h1 {
+            color: blue
+        }
+    </style>
+
+    <!-- Internal JavaScript -->
+    <script>
+        function showMyName() {
+            console.log('from internal script my name');
+        }
+    </script>
+
+    <!-- External StyleSheet -->
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="./css/stylesheet1.css">
+
+    <!-- External JavaScript
+    <script src="script.js"></script> -->
+
+</head>
+
+<body>
+    <h1 style="font-size: 38px; color: orange;" onclick="alert('Inline style')">INDIA</h1>
+    <input type="text" onchange="console.log('its getting changed')">
+    <p>Delhi is capital of INDIA</p>
+    <h1 onclick="showMyName('internal script')"> Agra</h1>
+    <h1 onclick="yourName('External Script')">India is a great country</h1>
+
+    <button id="clickButton">Click me</button>
+
+    <button id="testId">Test</button>
+       <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>

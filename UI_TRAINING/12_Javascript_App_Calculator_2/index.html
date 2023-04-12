@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML5 FlexLayout</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta name="viewport" content="width=device-width, initialscale 1.0">
+
+    <!-- internal java script -->
+    <script>
+        function showName() {
+            console.log('from internal script show my name');
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <script src="script.js"></script>
+
+    <!-- Application -->
+    Enter First Number <input type="text" name="first" id="fistVal">
+    <br>
+    <select name="operation" id="operation">
+        <option value="Sum">+</option>
+        <option value="Sub">-</option>
+        <option value="Mul">*</option>
+        <option value="Div">/</option>
+
+    </select>
+    <br>
+    Enter Second Number <input type="text" name="second" id="secVal">
+
+    <button onclick="cal()" id="submit">Submit</button>
+    <h2 id="result">RESULT</h2>
+</body>
+
+
+</html>

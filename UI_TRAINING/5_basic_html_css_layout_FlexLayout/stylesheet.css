@@ -1,0 +1,8 @@
+body {
+    margin: 0px
+}
+.main {
+    display: flex;
+    /* default row  */
+    flex-direction: column-reverse; 
+}

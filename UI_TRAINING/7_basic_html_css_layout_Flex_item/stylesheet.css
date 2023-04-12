@@ -1,0 +1,138 @@
+body{
+    margin: 0px;
+}
+
+.flex-container-grow, .flex-container-shrink{
+    display: flex;
+    height: 250px;
+    background-color: gray;
+}
+
+/* .flex-container-grow */
+.flex-container-grow .one{
+    background: skyblue;
+    flex-grow: 1;
+   
+}
+.flex-container-grow .two{
+    background: yellow;
+    flex-grow: 4;
+}
+.flex-container-grow .three{
+    background: orange;
+    flex-grow: 1;
+}
+.flex-container-grow .four{
+    background: blue;
+    flex-grow: 2;
+}
+.flex-container-grow .five{
+    background: crimson;
+    flex-grow: 1;
+}
+.flex-container-grow .six{
+    background: purple;
+    flex-grow: 1;
+}
+
+.flex-container-grow div{
+    height: 250px;
+}
+
+/* .flex-container-shrink */
+.flex-container-shrink  .one{
+    background: green;
+    flex-shrink: 0;
+   
+}
+.flex-container-shrink  .two{
+    background: peachpuff;
+    
+}
+.flex-container-shrink  .three{
+    background: goldenrod;
+    
+}
+.flex-container-shrink  .four{
+    background: plum;
+    flex-grow: 1;
+}
+.flex-container-shrink  .five{
+    background: peru;
+    
+}
+.flex-container-shrink .six{
+    background: orchid;
+    flex-shrink: 0;
+}
+
+ .flex-container-shrink div{
+    height: 100px;
+    width: 200px;
+}
+
+/* .flex-container-basis */
+.flex-container-basis  .one{
+    background: skyblue;
+    flex-basis: 150px;
+   
+}
+.flex-container-basis  .two{
+    background: yellow;
+    
+}
+.flex-container-basis  .three{
+    background: orange;
+    
+}
+.flex-container-basis  .four{
+    background: blue;
+    flex-basis: 150px;
+}
+.flex-container-basis  .five{
+    background: crimson;
+    
+}
+.flex-container-basis .six{
+    background: purple;
+    flex-shrink: 0;
+}
+
+/* .flex-container-all (grow shrink basis) */
+.flex-container-all  .one{
+    background: greenyellow;
+  flex: 1 0 200px;
+   
+}
+.flex-container-all  .two{
+    background: oldlace;
+    
+}
+.flex-container-all  .three{
+    background: darkslateblue;
+    
+}
+.flex-container-all  .four{
+    background: wheat;
+    flex: 0 0 200px;
+}
+.flex-container-all  .five{
+    background: mediumpurple;
+    
+}
+.flex-container-all .six{
+    background: lightcoral;
+    
+}
+
+@media screen and (max-width: 500px){
+    .flex-container-grow{
+        flex-direction: column;
+    }
+} 
+    
+@media print {
+    .flex-container-shrink{
+        background: pink;
+    }
+}

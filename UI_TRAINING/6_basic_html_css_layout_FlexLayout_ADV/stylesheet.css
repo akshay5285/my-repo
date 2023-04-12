@@ -1,0 +1,69 @@
+body{
+    margin: 0px;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    background-color: gray;
+}
+
+.flex-container .one{
+    background: skyblue;
+    order: 6;
+}
+.flex-container .two{
+    background: yellow;
+    order: 3;
+}
+.flex-container .three{
+    background: orange;
+    order: 4;
+}
+.flex-container .four{
+    background: blue;
+    order: 1;
+}
+.flex-container .five{
+    background: crimson;
+    order: 5;
+}
+.flex-container .six{
+    background: purple;
+    order: 2;
+}
+
+.flex-container div{
+    height: 100px;
+}
+
+@media screen and (min-width: 900px) {
+    .flex-container .one{
+        background: skyblue;
+        order: 5;
+    }
+    .flex-container .two{
+        background: yellow;
+        order: 4;
+    }
+    .flex-container .three{
+        background: orange;
+        order: 2;
+    }
+    .flex-container .four{
+        background: blue;
+        order: 1;
+    }
+    .flex-container .five{
+        background: crimson;
+        order: 3;
+    }
+    .flex-container .six{
+        background: purple;
+        order: 6;
+    }
+}

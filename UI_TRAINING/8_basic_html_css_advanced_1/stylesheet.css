@@ -1,0 +1,46 @@
+body{
+    margin: 0px;
+}
+
+h1{
+    margin: 0px;
+}
+
+.Fixed Header{
+    /* position fixed to window */
+    position: fixed;
+    background: skyblue;
+    top: 0;
+    margin: 0;
+
+}
+
+.Relative-block{
+    position: relative;
+    background: yellow;
+}
+
+.child-relative-1{
+    margin-top: 150px;
+    position: absolute;
+}
+
+.overflolw-block{
+    height: 120px;
+    background: gray;
+    overflow: auto;
+}
+
+.menu{
+    position: relative;
+}
+
+.menu ul{
+    display: none;
+}
+
+.menu:hover ul{
+    position: absolute;
+    top: 50px;
+    display: block;
+}
